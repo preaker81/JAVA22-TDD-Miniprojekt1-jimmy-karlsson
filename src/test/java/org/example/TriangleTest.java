@@ -90,9 +90,8 @@ class TriangleTest {
 
     @Test
     @DisplayName("Test empty constructor with valid user input")
-    void testEmptyConstructorWithValidInput() throws Exception {
-        // Local scope variables for this test
-        String validData = "3,4,5\n"; // Simulated user input for a valid triangle
+    void testEmptyConstructorWithValidInput() {
+        String validData = "3,4,5\n";
         InputStream originalStdin = System.in; // Backup the original System.in
 
         try {
@@ -101,7 +100,6 @@ class TriangleTest {
             triangle.getUserInput();
 
             assertNotNull(triangle.getCurrent_type(), "Triangle type should not be null for valid input");
-            // Further assertions can be made based on the expected type
         } finally {
             System.setIn(originalStdin); // Restore original System.in
         }
@@ -110,9 +108,8 @@ class TriangleTest {
 
     @Test
     @DisplayName("Test empty constructor with invalid user input")
-    void testEmptyConstructorWithInvalidInput() throws Exception {
-        // Local scope variables for this test
-        String invalidData = "1,2,3\n"; // Simulated user input for an invalid triangle
+    void testEmptyConstructorWithInvalidInput() {
+        String invalidData = "1,2,3\n";
         InputStream originalStdin = System.in; // Backup the original System.in
 
         try {
