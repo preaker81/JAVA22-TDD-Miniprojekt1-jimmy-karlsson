@@ -101,9 +101,9 @@ public class Triangle {
         return temp;
     }
 
-    public static void main(String[] args) {
+//    public static void main(String[] args) {
 //			Triangle triangle = new Triangle();
 //			triangle.getUserInput();
 //			triangle.getCurrent_type();
-    }
+//    }
 }
